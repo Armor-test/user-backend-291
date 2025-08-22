@@ -1,0 +1,39 @@
+# CODEOWNERS file for user-backend-291
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-test @Armor-test/team-governance @Armor-test/team-research
+
+# Directory ownership
+/core/ @Armor-test/dept-data @Armor-test/dept-billing
+/migrations/ @Armor-test/grp-reporting @Armor-test/grp-integration
+/dist/ @Armor-test/grp-payments @Armor-test/grp-integration @Armor-test/team-research
+/public/ @Armor-test/dept-security @Armor-test/grp-api
+/plugins/ @Armor-test/squad-search @Armor-test/squad-ux
+/shared/ @Armor-test/squad-database @Armor-test/dept-billing @Armor-test/dept-reporting
+/src/ @Armor-test/dept-notifications @Armor-test/squad-search
+/scripts/ @Armor-test/grp-reporting @Armor-test/dept-billing @Armor-test/team-logging
+/models/ @Armor-test/dept-ui @Armor-test/grp-api
+/examples/ @Armor-test/squad-cache @Armor-test/squad-payments
+/views/ @Armor-test/squad-cloud @Armor-test/dept-automation
+
+# File type ownership
+*.gradle @Armor-test/squad-frontend @Armor-test/dept-reliability @Armor-test/team-research
+*.html @Armor-test/grp-storage @Armor-test/grp-api
+*.jsx @Armor-test/squad-frontend @Armor-test/dept-test
+*.sql @Armor-test/squad-cache @Armor-test/dept-security @Armor-test/team-frontend
+*.tf @Armor-test/squad-database @Armor-test/dept-api @Armor-test/team-governance
+*.properties @Armor-test/squad-search @Armor-test/unit-test @Armor-test/grp-integration
+*.js @Armor-test/grp-integration @Armor-test/squad-reporting @Armor-test/squad-tooling
+*.graphql @Armor-test/dept-ui @Armor-test/squad-cloud @Armor-test/unit-cloud
+*.scala @Armor-test/squad-cloud @Armor-test/team-security @Armor-test/squad-research
+*.ini @Armor-test/dept-billing @Armor-test/unit-cloud
+*.ts @Armor-test/team-security @Armor-test/team-governance @Armor-test/grp-integration
+*.kt @Armor-test/team-logging @Armor-test/dept-data @Armor-test/dept-api
+*.rs @Armor-test/unit-governance @Armor-test/squad-apps @Armor-test/squad-cloud
+*.py @Armor-test/dept-reporting @Armor-test/dept-logging
+*.yaml @Armor-test/unit-governance @Armor-test/dept-test @Armor-test/grp-search
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
